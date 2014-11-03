@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="M_State" table="m_state">
+<id name="id" type="java.lang.Integer" column="id">
+<generator class="native" />
+</id>
+<property name="time" 		type="java.lang.Integer" />
+<property name="maxOnline" 	type="java.lang.Integer" /> 
+<property name="login_count" type="java.lang.Integer" />
+<property name="reg_count" 	type="java.lang.Integer" />
+<property name="money" 		type="java.lang.Integer" />
+<property name="activeUser" type="java.lang.Integer" />
+<property name="aveOnline" type="java.lang.String" />
+</class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="business.conut">
+	<class name="MJUserCharge" table="mjusercharge">
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="native" />
+		</id>
+		<property name="cmd" column="cmd" type="java.lang.String">
+		</property>
+		<property name="uid" column="uid" type="java.lang.Integer">
+		</property>
+		<property name="name" column="name" type="java.lang.String">
+		</property>
+		<property name="nickName" column="nickName" type="java.lang.String">
+		</property>
+		<property name="gold" column="gold" type="java.lang.Integer">
+		</property>
+		<property name="modGold" column="modGold" type="java.lang.Integer">
+		</property>
+		<property name="afterGold" column="afterGold" type="java.lang.Integer">
+		</property>
+		<property name="dia" column="dia" type="java.lang.Integer">
+		</property>
+		<property name="modDia" column="modDia" type="java.lang.Integer">
+		</property>
+		<property name="afterDia" column="afterDia" type="java.lang.Integer">
+		</property>
+		<property name="info" column="info" type="java.lang.String">
+		</property>
+		<property name="time" column="time" type="java.lang.Integer">
+		</property>
+		<property name="timeStr" column="timeStr" type="java.lang.String">
+		</property>
+	
+	</class>
+</hibernate-mapping>

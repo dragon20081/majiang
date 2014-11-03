@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_User" table="mj_user">
+<id name="uid" type="java.lang.Integer">
+  <column name="uid"></column>  
+<generator class="native" />
+</id>
+<property name="name"  type="java.lang.String">
+ <column name="name"/>
+</property>
+<property name="pwd"  type="java.lang.String">
+ <column name="pwd" />
+</property>
+<property name="email"  type="java.lang.String">
+ <column name="email" />
+</property>
+<property name="robot"  type="boolean">
+ <column name="robot" />
+</property>
+<property name="pingtai"  type="java.lang.String">
+ <column name="pingtai" />
+</property>
+
+<property name="nick"  type="java.lang.String">
+ <column name="nick" />
+</property>
+<property name="gold"  type="java.lang.Integer">
+ <column name="gold" />
+</property>
+<property name="juqing_1"  type="java.lang.Integer">
+ <column name="juqing_1" />
+</property>
+<property name="juqing_2"  type="java.lang.Integer">
+ <column name="juqing_2" />
+</property>
+<property name="juqing_3"  type="java.lang.Integer">
+ <column name="juqing_3" />
+</property>
+<property name="dianQuan"  type="java.lang.Integer">
+ <column name="dianQuan" />
+</property>
+<property name="sex"  type="java.lang.Integer">
+ <column name="sex" />
+</property>
+
+<property name="newTeach"  type="java.lang.Integer">
+ <column name="newTeach" />
+</property>
+
+<property name="panTotal"  type="java.lang.Integer">
+ <column name="panTotal" />
+</property>
+<property name="panHu"  type="java.lang.Integer">
+ <column name="panHu" />
+</property>
+<property name="panHu10"  type="java.lang.Integer">
+ <column name="panHu10" />
+</property>
+<property name="panHu20"  type="java.lang.Integer">
+ <column name="panHu20" />
+</property>
+<property name="panHu30"  type="java.lang.Integer">
+ <column name="panHu30" />
+</property>
+<!--  
+<property name="unLockImg"  type="java.lang.String">
+ <column name="unLockImg" />
+</property>-->
+<property name="ownSkills"  type="java.lang.String">
+ <column name="ownSkills" />
+</property>
+
+
+<property name="level"  type="java.lang.Integer">
+ <column name="level" />
+</property>
+<property name="score"  type="java.lang.Integer">
+ <column name="score" />
+</property>
+<property name="image"  type="java.lang.Integer">
+ <column name="image" />
+</property>
+<property name="equipSkill"  type="java.lang.String">
+ <column name="equipSkill" />
+</property>
+
+
+<property name="regTime"  type="java.lang.String">
+ <column name="regTime" />
+</property>
+<property name="lastLogin"  type="java.lang.String">
+ <column name="lastLogin"/>
+</property>
+<property name="loginCount"  type="java.lang.Integer">
+ <column name="loginCount"/>
+</property>
+<property name="taopaoRate"  type="java.lang.Integer">
+ <column name="taopaoRate"/>
+</property>
+<property name="hadRole"  type="java.lang.Boolean">
+ <column name="hadRole"/>
+</property>
+<property name="joinedNetBattle"  type="java.lang.Boolean">
+ <column name="joinedNetBattle"/>
+</property>
+<property name="taskJinDu"  type="java.lang.String" length="1000">
+ <column name="taskJinDu"/>
+</property>
+<property name="onLineTime"  type="java.lang.Integer">
+ <column name="onLineTime"/>
+</property>
+<property name="score_cup"  type="java.lang.String">
+ <column name="score_cup"/>
+</property>
+<property name="changDanji"  type="java.lang.String">
+ <column name="changDanji" default="''" />
+</property>
+<property name="danjiCount"  type="java.lang.Integer">
+ <column name="danjiCount" default="0" />
+</property>
+<property name="openedCup"  type="java.lang.Integer">
+ <column name="openedCup" default="-1" />
+</property>
+<property name="openedDanji"  type="java.lang.Integer">
+ <column name="openedDanji" default="-1" />
+</property>
+
+<property name="adults"  type="java.lang.Boolean">
+ <column name="adults" default="true" />
+</property>
+
+<one-to-one name="props" class="business.entity.M_Prop"  cascade="all"  property-ref="user"></one-to-one>
+<set name="roles" inverse="true" lazy="false" cascade="all">
+<key column="userId"/>
+<one-to-many class="MJ_Role"/>
+</set>
+</class>
+</hibernate-mapping>
+

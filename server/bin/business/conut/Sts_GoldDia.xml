@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_GoldDia" table="sts_golddia">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="absDay" 		column="absDay"	 	type="java.lang.Integer"/>
+<property name="day"			column="day" 		type="java.lang.String"/>
+<property name="totalGold" 		column="totalGold" 	type="java.lang.Long"/>
+<property name="totalDia" 		column="totalDia" 	type="java.lang.Long"/>
+<property name="usedGold" 		column="usedGold" 	type="java.lang.Long"/>
+<property name="useedDia" 		column="useedDia" 	type="java.lang.Long"/>
+<property name="GoldFromDia" 	column="GoldFromDia" 	type="java.lang.Long"/>
+<property name="DiaToGold" 		column="DiaToGold" 		type="java.lang.Long"/>
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String day;
+	private long totalGold;
+	private long totalDia;
+	private long usedGold;
+	private long useedDia;
+	private long GoldFromDia; //从钻石兑换来的金币数量
+	private long DiaToGold;   //兑换成金币的钻石数量 -->
+
+</hibernate-mapping>
+

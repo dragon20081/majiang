@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_Recharge" table="sts_recharge">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="day" 		column="day"	 	type="java.lang.String"/>
+<property name="absDay" 	column="absDay"	 	type="java.lang.Integer"/>
+<property name="time1" 		column="time1"	 	type="java.lang.String"/>
+<property name="time2" 		column="time2"	 	type="java.lang.String"/>
+<property name="uid" 		column="uid"	 	type="java.lang.Integer"/>
+<property name="account"	column="account" 	type="java.lang.String"/>
+<property name="nick" 		column="nick" 		type="java.lang.String"/>
+<property name="dia1" 		column="dia1" 		type="java.lang.Integer"/>
+<property name="dia2" 		column="dia2" 		type="java.lang.Integer"/>
+<property name="dia3" 		column="dia3" 		type="java.lang.Integer"/>
+<property name="dia4" 		column="dia4" 		type="java.lang.Integer"/>
+<property name="dia5" 		column="dia5" 		type="java.lang.Integer"/>
+<property name="dia6" 		column="dia6" 		type="java.lang.Integer"/>
+
+<property name="money" 			column="money" 			type="java.lang.Integer"/>
+<property name="payWay" 		column="payWay" 		type="java.lang.String"/>
+<property name="diaByfore" 		column="diaByfore" 		type="java.lang.Integer"/>
+<property name="diaAfter" 		column="diaAfter" 		type="java.lang.Integer"/>
+</class>
+<!-- 	
+	private int id;
+	private int uid;
+	private String account;
+	private String nick;
+	private int dia1;
+	private int dia2;
+	private int dia3;
+	private int dia4;
+	private int dia5;
+	private int dia6;
+	private int money;
+	private String payWay;
+	private int diaByfore;
+	private int diaAfter;-->
+
+</hibernate-mapping>
+

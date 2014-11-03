@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_360Order" table="sts_360order">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="app_order_id" 		column="app_order_id"	 	type="java.lang.String"/>
+<property name="uid" 	column="uid"	 	type="java.lang.Integer"/>
+<property name="nick"		column="nick" 		type="java.lang.String"/>
+
+<property name="app_key"	column="app_key" 	type="java.lang.String"/>
+<property name="product_id"	column="product_id" 	type="java.lang.String"/>
+<property name="amount"	column="amount" 	type="java.lang.Integer"/>
+<property name="app_uid"	column="app_uid" 	type="java.lang.String"/>
+<property name="app_ext1"	column="app_ext1" 	type="java.lang.String"/>
+
+<property name="app_ext2"	column="app_ext2" 	type="java.lang.String"/>
+<property name="user_id"	column="user_id" 	type="java.lang.Long"/>
+<property name="order_id"	column="order_id" 	type="java.lang.Long"/>
+<property name="gateway_flag"	column="gateway_flag" 	type="java.lang.String"/>
+<property name="sign_type"	column="sign_type" 	type="java.lang.String"/>
+
+<property name="sign_return"	column="sign_return" 	type="java.lang.String"/>
+<property name="sign"	column="sign" 	type="java.lang.String"/>
+<property name="verify_360"	column="verify_360" 	type="java.lang.String"/>
+<property name="verify_client"	column="verify_client" 	type="java.lang.Boolean"/>
+
+<property name="diamand"	type="java.lang.Integer">
+ <column name="diamand" default="0"></column>
+</property>
+<property name="RMB"	type="java.lang.Integer">
+ <column name="RMB" default="0"></column>
+</property>
+
+</class>
+<!-- 	
+	private int id;
+	
+	private String app_order_id = "";
+	private int uid;
+	private String nick = "";
+	
+	private String app_key = "";
+	private String product_id ="";
+	private int amount;
+	private String app_uid = "";
+	private String app_ext1 = "";
+	private String app_ext2 = "";	
+	private long user_id;
+	private long order_id;
+	private String gateway_flag = "";
+	private String sign_type = "";
+
+	private String sign_return = "";
+	private String sign = "";
+	
+	private boolean verify_360 = false;        //订单已与360服务器确认
+	private boolean verify_client = false;     //订单已于前台确认
+-->
+</hibernate-mapping>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_PayInfo" table="mj_payinfo">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="payId" 		column="payId" 		type="java.lang.Integer"/>
+<property name="payStr_android" 	column="payStr_android" 	type="java.lang.String"/>
+<property name="payStr_apple" 	column="payStr_apple" 	type="java.lang.String"/>
+<property name="rmb" 		column="rmb" 		type="java.lang.Integer"/>
+<property name="dia" 		column="dia" 		type="java.lang.Integer"/>
+<property name="flag" 		column="flag" 		type="java.lang.Integer"/>
+<property name="item" 		column="item" 		type="java.lang.Integer"/>
+<property name="pingtai" 		column="pingtai" 		type="java.lang.String"/>
+</class>
+</hibernate-mapping>
+<!-- 
+	public int id;
+	public int payId;
+	public String payStr;
+	public int rmb;
+	public int dia;
+	public int flag;
+	item
+	pingtai
+ -->

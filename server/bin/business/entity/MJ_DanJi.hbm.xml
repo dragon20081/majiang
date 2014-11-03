@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_DanJil" table="mj_danji">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="bei"  type="java.lang.Integer">
+ <column name="bei" />
+</property>
+<property name="cost"  type="java.lang.Integer">
+ <column name="cost" />
+</property>
+<property name="quan"  type="java.lang.Integer">
+ <column name="quan" />
+</property>
+<property name="startPoint"  type="java.lang.Integer">
+ <column name="startPoint" />
+</property>
+<property name="pan"  type="java.lang.Integer">
+ <column name="pan" />
+</property>
+<property name="skill"  type="java.lang.Boolean">
+ <column name="skill" />
+</property>
+</class>
+</hibernate-mapping>

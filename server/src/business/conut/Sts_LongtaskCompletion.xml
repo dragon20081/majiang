@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_LongTaskCompletion" table="sts_longtask">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="task1" 		column="task1"	 	type="java.lang.Integer"/>
+<property name="task2" 		column="task2"	 	type="java.lang.Integer"/>
+<property name="task3" 		column="task3"	 	type="java.lang.Integer"/>
+<property name="task4" 		column="task4"	 	type="java.lang.Integer"/>
+<property name="task5" 		column="task5"	 	type="java.lang.Integer"/>
+<property name="task6" 		column="task6"	 	type="java.lang.Integer"/>
+<property name="task7" 		column="task7"	 	type="java.lang.Integer"/>
+<property name="task8" 		column="task8"	 	type="java.lang.Integer"/>
+<property name="task9" 		column="task9"	 	type="java.lang.Integer"/>
+<property name="task10" 		column="task10"	 	type="java.lang.Integer"/>
+<property name="task11" 		column="task11"	 	type="java.lang.Integer"/>
+<property name="task12" 		column="task12"	 	type="java.lang.Integer"/>
+<property name="task13" 		column="task13"	 	type="java.lang.Integer"/>
+<property name="task14" 		column="task14"	 	type="java.lang.Integer"/>
+<property name="task15" 		column="task15"	 	type="java.lang.Integer"/>
+<property name="task16" 		column="task16"	 	type="java.lang.Integer"/>
+<property name="task17" 		column="task17"	 	type="java.lang.Integer"/>
+
+<property name="task101" 		column="task101"	 	type="java.lang.Integer"/>
+<property name="task102" 		column="task102"	 	type="java.lang.Integer"/>
+<property name="task103" 		column="task103"	 	type="java.lang.Integer"/>
+<property name="task104" 		column="task104"	 	type="java.lang.Integer"/>
+<property name="task105" 		column="task105"	 	type="java.lang.Integer"/>
+<property name="task106" 		column="task106"	 	type="java.lang.Integer"/>
+<property name="task107" 		column="task107"	 	type="java.lang.Integer"/>
+<property name="task108" 		column="task108"	 	type="java.lang.Integer"/>
+<property name="task109" 		column="task109"	 	type="java.lang.Integer"/>
+<property name="task110" 		column="task110"	 	type="java.lang.Integer"/>
+<property name="task111" 		column="task111"	 	type="java.lang.Integer"/>
+<property name="task112" 		column="task112"	 	type="java.lang.Integer"/>
+<property name="task113" 		column="task113"	 	type="java.lang.Integer"/>
+<property name="task114" 		column="task114"	 	type="java.lang.Integer"/>
+<property name="task115" 		column="task115"	 	type="java.lang.Integer"/>
+<property name="task116" 		column="task116"	 	type="java.lang.Integer"/>
+<property name="task117" 		column="task117"	 	type="java.lang.Integer"/>
+
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String day = "";
+	private String timeDay = "";
+	private String timeMonth ="";
+	private int task1;
+	private int task2;
+	private int task3;
+	private int task4;
+	private int task5;
+	private int task6;
+	private int task7;
+	private int task8;
+	private int task9;
+	private int task10;
+	private int task11;
+	private int task12;
+	private int task13;
+	private int task14;
+	private int task15;
+	private int task16;
+	private int task17;
+-->
+
+</hibernate-mapping>
+

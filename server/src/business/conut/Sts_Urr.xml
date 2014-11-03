@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_Urr" table="user_r_rate">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="date" 		column="_date"	 	type="java.lang.String"/>
+<property name="absTime" 	column="absTime" 	type="java.lang.Integer"/>
+<property name="newReg"		column="newReg" 	type="java.lang.Integer"/>
+<property name="newDLogin" 	column="newDLogin" 	type="java.lang.Integer"/>
+<property name="dLogin" 	column="dLogin" 	type="java.lang.Integer"/>
+<property name="oncep" 		column="oncep" 		type="java.lang.Integer"/>
+
+<property name="day1" 		column="day1" 		type="java.lang.Integer"/>
+<property name="day2" 		column="day2" 		type="java.lang.Integer"/>
+<property name="day3" 		column="day3" 		type="java.lang.Integer"/>
+<property name="day4" 		column="day4" 		type="java.lang.Integer"/>
+<property name="day5" 		column="day5" 		type="java.lang.Integer"/>
+<property name="day6" 		column="day6" 		type="java.lang.Integer"/>
+<property name="day7" 		column="day7" 		type="java.lang.Integer"/>
+<property name="day8" 		column="day8" 		type="java.lang.Integer"/>
+<property name="day9" 		column="day9" 		type="java.lang.Integer"/>
+<property name="day10" 		column="day10" 		type="java.lang.Integer"/>
+
+<property name="day11" 		column="day11" 		type="java.lang.Integer"/>
+<property name="day12" 		column="day12" 		type="java.lang.Integer"/>
+<property name="day13" 		column="day13" 		type="java.lang.Integer"/>
+<property name="day14" 		column="day14" 		type="java.lang.Integer"/>
+<property name="day15" 		column="day15" 		type="java.lang.Integer"/>
+<property name="day16" 		column="day16" 		type="java.lang.Integer"/>
+<property name="day17" 		column="day17" 		type="java.lang.Integer"/>
+<property name="day18" 		column="day18" 		type="java.lang.Integer"/>
+<property name="day19" 		column="day19" 		type="java.lang.Integer"/>
+<property name="day20" 		column="day20" 		type="java.lang.Integer"/>
+
+<property name="day21" 		column="day21" 		type="java.lang.Integer"/>
+<property name="day22" 		column="day22" 		type="java.lang.Integer"/>
+<property name="day23" 		column="day23" 		type="java.lang.Integer"/>
+<property name="day24" 		column="day24" 		type="java.lang.Integer"/>
+<property name="day25" 		column="day25" 		type="java.lang.Integer"/>
+<property name="day26" 		column="day26" 		type="java.lang.Integer"/>
+<property name="day27" 		column="day27" 		type="java.lang.Integer"/>
+<property name="day28" 		column="day28" 		type="java.lang.Integer"/>
+<property name="day29" 		column="day29" 		type="java.lang.Integer"/>
+<property name="day30" 		column="day30" 		type="java.lang.Integer"/>
+
+<property name="earlier" 		column="earlier" 		type="java.lang.Integer"/>
+<property name="aveOnline" 		column="aveOnline" 		type="java.lang.Integer"/>
+
+</class>
+</hibernate-mapping>
+

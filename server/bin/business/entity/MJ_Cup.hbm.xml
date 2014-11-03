@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_Cup" table="mj_cup">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="name"  type="java.lang.String">
+ <column name="name" />
+</property>
+<property name="info"  type="java.lang.String">
+ <column name="info" />
+</property>
+<property name="rule"  type="java.lang.Integer">
+ <column name="rule" />
+</property>
+<property name="cost"  type="java.lang.Integer">
+ <column name="cost" />
+</property>
+<property name="difficulty"  type="java.lang.Integer">
+ <column name="difficulty" />
+</property>
+<property name="condition"  type="java.lang.String">
+ <column name="_condition" />
+</property>
+
+<property name="scopePlayer"  type="java.lang.String">
+ <column name="scopePlayer" />
+</property>
+<property name="playerNum"  type="java.lang.Integer">
+ <column name="playerNum" />
+</property>
+</class>
+</hibernate-mapping>
+<!-- 
+
+	private int id;
+	private String name;
+	private String info;
+	private int rule;
+	private int cost;
+	private int difficulty;
+	private String condition;
+	private String scopePlayer;
+	private int playerNum;
+ -->

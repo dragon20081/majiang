@@ -1,0 +1,43 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+	<property name="hibernate.connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property> 
+	<property name="hibernate.connection.url">
+		jdbc:mysql://localhost:3306/cdmrk_no1_reg
+	</property>
+	<property name="hibernate.connection.useUnicode">true</property>
+	<property name="hibernate.connection.characterEncoding">
+		UTF-8
+	</property>
+	<property name="hibernate.connection.username">cdmrk</property>
+	<!-- <property name="hibernate.connection.password"></property> -->
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">false</property>
+	<property name="hibernate.connection.autoReconnect">true</property>
+	<property name="hibernate.connection.autoReconnectForPools">
+		true
+	</property>
+	<property
+		name="hibernate.connection.is-connection-validation-required">
+		true
+	</property>
+
+	<!--配置连接池  -->
+	<property name="hibernate.c3p0.min_size">1</property>
+	<property name="hibernate.c3p0.max_size">100</property>
+	<property name="hibernate.c3p0.acquire_increment">2</property>
+	<property name="hibernate.c3p0.idle_test_period">1500</property>
+	<property name="hibernate.c3p0.timeout">1800</property>
+	<property name="hibernate.c3p0.validate">true</property>
+
+	<!-- 指定hibernate管理的映射文件  -->
+
+</session-factory>
+</hibernate-configuration>

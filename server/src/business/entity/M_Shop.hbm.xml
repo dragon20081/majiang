@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="M_Shop" table="mj_shop">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="type" 			column="type"	 		type="java.lang.String"/>
+<property name="proId" 			column="proId"	 		type="java.lang.Integer"/>
+<property name="price_gold" 	column="price_gold" 	type="java.lang.Integer"/>
+<property name="price_dianquan"	column="price_dianquan" type="java.lang.Integer"/>
+<property name="propNum"	column="propNum" type="java.lang.Integer"/>
+<property name="flag"		column="flag" 	 type="java.lang.Integer"/>
+<property name="onSell" 		column="onSell" 		type="java.lang.Integer"/>
+</class>
+</hibernate-mapping>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_TmpResource" table="mj_tmpresource">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="rid" 		column="rid" 			type="java.lang.String"/>
+<property name="name" 		column="name" 			type="java.lang.String"/>
+<property name="version" 		column="version" 	type="java.lang.Integer"/>
+<property name="url" 		column="url" 			type="java.lang.String"/>
+<property name="size" 		column="size" 			type="java.lang.Double"/>
+<property name="info" 		column="info" 			type="java.lang.String"/>
+
+</class>
+</hibernate-mapping>
+

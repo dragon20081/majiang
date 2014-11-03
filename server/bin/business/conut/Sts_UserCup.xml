@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_UserCup" table="sts_usercup">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="absDay" 	column="absDay"	 	type="java.lang.Integer"/>
+<property name="timeDay" 		column="timeDay"	 	type="java.lang.String"/>
+<property name="timeMonth" 		column="timeMonth"	 	type="java.lang.String"/>
+<property name="uid" 		column="uid"	 	type="java.lang.Integer"/>
+<property name="account" 	column="account" 	type="java.lang.String"/>
+<property name="nick"		column="nick" 		type="java.lang.String"/>
+
+<property name="cupId" 		column="cupId"	 	type="java.lang.Integer"/>
+<property name="startFlag" 		column="startFlag"	 	type="java.lang.Integer"/>
+<property name="endFlag" 		column="endFlag"	 	type="java.lang.Integer"/>
+
+<property name="startTime"		column="startTime" 		type="java.lang.String"/>
+<property name="endTime"		column="endTime" 		type="java.lang.String"/>
+
+<property name="consumeProp1" 		column="consumeProp1"	 	type="java.lang.Integer"/>
+<property name="consumeProp2" 		column="consumeProp2"	 	type="java.lang.Integer"/>
+
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String timeDay = "";
+	private String timeMonth ="";
+	private int uid;
+	private String account = "";
+	private String nick ="";
+	private int danjiId = 0;
+	private int startFlag = -1;
+	private String startTime = "";
+	private int endFlag = -1;
+	private String endTime = "";-->
+
+</hibernate-mapping>
+

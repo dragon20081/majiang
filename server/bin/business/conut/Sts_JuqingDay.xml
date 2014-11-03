@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_JuqingDay" table="sts_juqingday">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="absDay" 		column="absDay"	 	type="java.lang.Integer"/>
+<property name="day"			column="day" 		type="java.lang.String"/>
+<property name="time1"			column="time1" 		type="java.lang.String"/>
+<property name="time2"			column="time2" 		type="java.lang.String"/>
+<property name="juqing1"		column="juqing1" 	type="java.lang.Integer"/>
+<property name="juqing2"		column="juqing2" 	type="java.lang.Integer"/>
+<property name="juqing3"		column="juqing3" 	type="java.lang.Integer"/>
+<property name="juqing4"		column="juqing4" 	type="java.lang.Integer"/>
+<property name="juqing5"		column="juqing5" 	type="java.lang.Integer"/>
+<property name="juqing6"		column="juqing6" 	type="java.lang.Integer"/>
+<property name="juqing7"		column="juqing7" 	type="java.lang.Integer"/>
+<property name="juqing8"		column="juqing8" 	type="java.lang.Integer"/>
+<property name="juqing9"		column="juqing9" 	type="java.lang.Integer"/>
+<property name="juqing10"		column="juqing10" 	type="java.lang.Integer"/>
+<property name="juqing11"		column="juqing11" 	type="java.lang.Integer"/>
+<property name="juqing12"		column="juqing12" 	type="java.lang.Integer"/>
+<property name="juqing13"		column="juqing13" 	type="java.lang.Integer"/>
+<property name="juqing14"		column="juqing14" 	type="java.lang.Integer"/>
+<property name="juqing15"		column="juqing15" 	type="java.lang.Integer"/>
+<property name="juqing16"		column="juqing16" 	type="java.lang.Integer"/>
+<property name="juqing17"		column="juqing17" 	type="java.lang.Integer"/>
+<property name="juqing18"		column="juqing18" 	type="java.lang.Integer"/>
+
+<property name="allComplete"		column="allComplete" 		type="java.lang.Integer"/>
+<property name="totalPlayer"		column="totalPlayer" 		type="java.lang.Integer"/>
+<property name="historyHadImg"		column="historyHadImg" 		type="java.lang.Integer"/>
+<property name="HistoryNetBattle"	column="HistoryNetBattle" 	type="java.lang.Integer"/>
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String day;
+	private int juqing1;
+	private int juqing2;
+	private int juqing3;
+	private int juqing4;
+	private int juqing5;
+	private int juqing6;
+	private int juqing7;
+	private int juqing8;
+	private int juqing9;
+	private int juqing10;
+	private int juqing11;
+	private int juqing12;
+	private int juqing13;
+	private int juqing14;
+	private int juqing15;
+	private int juqing16;
+	private int juqing17;
+	private int juqing18;
+	private int allComplete;
+	private int totalPlayer;
+	private int historyHadImg;
+	private int HistoryNetBattle; 
+	-->
+
+</hibernate-mapping>
+

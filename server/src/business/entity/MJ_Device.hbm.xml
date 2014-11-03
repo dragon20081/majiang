@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_Device" table="mj_device">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="deviceId" 		column="deviceId" 		type="java.lang.Integer"/>
+<property name="regTime" 		column="regTime" 		type="java.lang.String"/>
+<property name="lastLoginTime" 	column="lastLoginTime" 	type="java.lang.String"/>
+<property name="openTimes" 		column="openTimes" 		type="java.lang.Integer"/>
+</class>
+</hibernate-mapping>
+
+<!-- 
+	private int id;
+	private int deviceId;
+	private String regTime ="";
+	private String lastLoginTime = "";
+	private int openTimes;           //打开次数
+ -->

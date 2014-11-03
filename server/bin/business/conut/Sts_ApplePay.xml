@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_ApplePay" table="sts_applepay">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="identifier" 		column="identifier"	 	type="java.lang.String"/>
+<property name="productIdentifier"	column="productIdentifier" 	type="java.lang.String"/>
+<property name="date0"		column="date0" 		type="java.lang.String"/>
+<property name="receipt" 	column="receipt" 	type="java.lang.String" length="6000"/>
+<property name="result" 		column="result" 		type="java.lang.String" length="6000"/>
+<property name="original" 	column="original" 	type="java.lang.String"/>
+<property name="payTime" 	column="payTime" 	type="java.lang.String"/>
+<property name="used" 	column="used" 	type="java.lang.Integer"/>
+</class>
+<!-- 	
+	private String identifier = "";
+	private String productIdentifier = "";
+	private String date0 = "";
+	private String receipt = "";
+	private String result = "";
+	private String original = "";
+	private String payTime = "";
+	private int used = 0;
+	 -->
+
+</hibernate-mapping>
+

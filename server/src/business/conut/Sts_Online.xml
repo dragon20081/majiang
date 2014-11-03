@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_Online" table="sts_online">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="absDay" 		column="absDay"	 		type="java.lang.Integer"/>
+<property name="day"			column="day" 			type="java.lang.String" />
+<property name="averOl" 		column="averOl" 		type="java.lang.Integer"/>
+<property name="olplayer" 		column="olplayer" 		type="java.lang.String" length="6000"/>
+<property name="olChang" 		column="olChang" 		type="java.lang.String" length="6000"/>
+<property name="olDating" 		column="olDating" 		type="java.lang.String" length="6000"/>
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String day;
+	private String olplayer;
+	private String olChang;
+	private String olDating; -->
+
+</hibernate-mapping>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_MuteBlacklist" table="sts_muteblacklist">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="nick"		column="nick" 		type="java.lang.String"/>
+<property name="muteDays" 	column="muteDays" 	type="java.lang.Integer"/>
+<property name="blackDays" 	column="blackDays" 	type="java.lang.Integer"/>
+<property name="black" 		column="black" 		type="java.lang.Boolean"/>
+<property name="mute" 		column="mute" 		type="java.lang.Boolean"/>
+</class>
+<!-- 	
+	private int id;
+	private String nick;
+	private int muteDays;
+	private boolean black; -->
+
+</hibernate-mapping>
+

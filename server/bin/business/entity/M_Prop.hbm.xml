@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="M_Prop" table="m_prop">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="pro1Num" 		column="pro1Num" 		type="java.lang.Integer"/>
+<property name="pro2Num" 		column="pro2Num" 		type="java.lang.Integer"/>
+<property name="pro3Num" 		column="pro3Num" 		type="java.lang.Integer"/>
+<property name="pro4Num" 		column="pro4Num" 		type="java.lang.Integer"/>
+<many-to-one name="user" class="business.entity.MJ_User"  unique="true" column="uid"></many-to-one>
+</class>
+</hibernate-mapping>
+

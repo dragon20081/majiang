@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_DJ_Count" table="sts_dj_count">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="absDay" 	column="absDay"	 	type="java.lang.Integer"/>
+<property name="timeDay" 		column="timeDay"	 	type="java.lang.String"/>
+<property name="timeMonth" 		column="timeMonth"	 	type="java.lang.String"/>
+
+<property name="Time_1" 	column="Time_1"	 	type="java.lang.Integer"/>
+<property name="Time_2" 	column="Time_2"	 	type="java.lang.Integer"/>
+<property name="Time_3" 	column="Time_3"	 	type="java.lang.Integer"/>
+<property name="Time_4" 	column="Time_4"	 	type="java.lang.Integer"/>
+<property name="Time_5" 	column="Time_5"	 	type="java.lang.Integer"/>
+<property name="Time_other" 	column="Time_other"	 	type="java.lang.Integer"/>
+
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String timeDay = "";
+	private String timeMonth ="";
+	
+	private int Time_1 = 0;
+	private int Time_2 = 0;
+	private int Time_3 = 0;
+	private int Time_4 = 0;
+	private int Time_5 = 0;
+	private int Time_other = 0;;-->
+
+</hibernate-mapping>
+

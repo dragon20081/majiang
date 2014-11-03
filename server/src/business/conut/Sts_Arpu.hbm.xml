@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="business.conut.Sts_Arpu" table="sts_arpu">
+        <id name="id" column="id" type="java.lang.Integer">
+            <generator class="native" />
+        </id>
+         <property name="absDay"   type="java.lang.Integer"/>
+         <property name="day"   type="java.lang.String"/>
+         <property name="timeMoth"   type="java.lang.String"/>
+         <property name="chargeNum"   type="java.lang.Integer"/>
+         <property name="addCharge"   type="java.lang.Integer"/>
+         <property name="amount"   type="java.lang.Integer"/>
+         <property name="arpuv"   type="java.lang.Double"/>
+    </class>
+</hibernate-mapping>

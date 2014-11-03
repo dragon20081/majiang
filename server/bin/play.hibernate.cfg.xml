@@ -1,0 +1,88 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+	<property name="hibernate.connection.driver_class">
+		com.mysql.jdbc.Driver
+	</property>
+	<property name="hibernate.dialect">
+		org.hibernate.dialect.MySQLDialect
+	</property>
+	<property name="hibernate.connection.url">
+		jdbc:mysql://localhost:3306/majiang
+	</property>
+	<!-- 
+			jdbc:mysql://localhost:3306/majiang
+			jdbc:mysql://localhost:3306/majiang_android
+	 -->
+	<property name="hibernate.connection.useUnicode">true</property>
+	<property name="hibernate.connection.characterEncoding">
+		GB2312
+	</property>
+	<property name="hibernate.connection.username">cdmrk</property>
+	<property name="hibernate.connection.password">cdmrk!@#$</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="show_sql">false</property>
+	<property name="hibernate.connection.autoReconnect">true</property>
+	<property name="hibernate.connection.autoReconnectForPools">
+		true
+	</property>
+	<property
+		name="hibernate.connection.is-connection-validation-required">
+		true
+	</property>
+
+	<!--配置连接池  -->
+	<property name="hibernate.c3p0.min_size">1</property>
+	<property name="hibernate.c3p0.max_size">100</property>
+	<property name="hibernate.c3p0.acquire_increment">2</property>
+	<property name="hibernate.c3p0.idle_test_period">1500</property>
+	<property name="hibernate.c3p0.timeout">1800</property>
+	<property name="hibernate.c3p0.validate">true</property>
+	<!-- 指定hibernate管理的映射文件  -->
+	<mapping resource="business/entity/MJ_User.hbm.xml" />
+	<mapping resource="business/entity/MJ_Role.hbm.xml" />
+	<mapping resource="business/entity/M_State.hbm.xml" />
+	<mapping resource="business/entity/M_Shop.hbm.xml" />
+	<mapping resource="business/entity/M_Prop.hbm.xml" />
+	<mapping resource="business/conut/Sts_Arpu.hbm.xml" />
+	<mapping resource="business/conut/Sts_BuyProp.xml" />
+	<mapping resource="business/conut/Sts_Changci.xml" />
+	<mapping resource="business/conut/Sts_Chat.xml" />
+	<mapping resource="business/conut/Sts_GoldDia.xml" />
+	<mapping resource="business/conut/Sts_JuqingDay.xml" />
+	<mapping resource="business/conut/Sts_JuqingMouth.xml" />
+	<mapping resource="business/conut/Sts_MuteBlacklist.xml" />
+	<mapping resource="business/conut/Sts_Notice.xml" />
+	<mapping resource="business/conut/Sts_Online.xml" />
+	<mapping resource="business/conut/Sts_Recharge.xml" />
+	<mapping resource="business/conut/Sts_Urr.xml" />
+	<mapping resource="business/conut/Sts_UseProp.xml" />
+	<mapping resource="business/entity/MJ_Resource.hbm.xml" />
+	<mapping resource="business/entity/MJ_TmpResource.hbm.xml" />
+	<mapping resource="business/entity/MJ_PayInfo.hbm.xml" />
+	<mapping resource="business/conut/MJUserCharge.hbm.xml" /> 
+	<mapping resource="business/entity/MJ_DayTask.hbm.xml" />
+	<mapping resource="business/entity/MJ_Skill.hbm.xml" />
+	<mapping resource="business/conut/Sts_ApplePay.xml" /> 
+	<mapping resource="business/entity/MJ_Device.hbm.xml" />
+	<mapping resource="business/conut/Sts_MJDevice.xml" /> 
+	<mapping resource="business/entity/MJ_DataFan.hbm.xml" />
+	<mapping resource="business/conut/Sts_UserOperate.xml" /> 
+	<mapping resource="business/entity/MJ_DanJi.hbm.xml" />
+	<mapping resource="business/entity/MJ_Cup.hbm.xml" />
+	<mapping resource="business/conut/Sts_UserDanji.xml" /> 
+	<mapping resource="business/conut/Sts_UserCup.xml" /> 
+	<mapping resource="business/conut/Sts_DaytaskCompletion.xml" /> 
+	<mapping resource="business/conut/Sts_LongtaskCompletion.xml" /> 	
+	<mapping resource="business/conut/Sts_DJ_Count.xml" /> 	
+	<mapping resource="business/conut/Sts_UserDanjiCount.xml" /> 	
+	<mapping resource="business/conut/Sts_RewardProp.xml" /> 	
+	<mapping resource="business/conut/Sts_360Order.xml" /> 	
+	
+	
+	
+	
+</session-factory>
+</hibernate-configuration>

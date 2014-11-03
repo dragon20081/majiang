@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.entity">
+<class name="MJ_DayTask" table="mj_daytask">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="taskId" 		column="taskId" 		type="java.lang.Integer"/>
+<property name="taskType" 		column="taskType" 		type="java.lang.Integer"/>
+<property name="gold" 		column="gold" 		type="java.lang.Integer"/>
+<property name="dia" 		column="dia" 		type="java.lang.Integer"/>
+<property name="props" 		column="props" 		type="java.lang.String"/>
+<property name="initProgress" 		column="initProgress" 			type="java.lang.String"/>
+<property name="taskDesc" 		column="taskDesc" 			type="java.lang.String"/>
+<property name="firstLogin" 	column="firstLogin" 		type="java.lang.Integer"/>
+<property name="onLineTime" 	column="onLineTime" 		type="java.lang.Integer"/>
+
+<property name="winPan" 	column="winPan" 		type="java.lang.Integer"/>
+<property name="playPan" 	column="playPan" 		type="java.lang.Integer"/>
+<property name="manGuanPan" 	column="manGuanPan" 		type="java.lang.Integer"/>
+<property name="zimoPan" 		column="zimoPan" 			type="java.lang.Integer"/>
+<property name="dianpaoPan" 	column="dianpaoPan" 		type="java.lang.Integer"/>
+<property name="finishJuqing" 	column="finishJuqing" 		type="java.lang.Integer"/>
+
+<property name="taskParam1" type="java.lang.Integer">
+<column name="taskParam1" default="0"></column>
+</property>
+<property name="taskParam2" type="java.lang.Integer">
+<column name="taskParam2" default="0"></column>
+</property>
+
+</class>
+</hibernate-mapping>
+
+<!-- 
+	private int taskId;
+	//任务奖励
+	private int gold;
+	private int dia;
+	private String props;
+	//任务描述
+	private String taskDesc;
+	//任务完成条件
+	//当天第一次登陆
+	private int firstLogin;
+	
+	private int winPan;
+	private int playPan;
+	private int manGuanPan;
+	private int zimoPan;
+	private int dianpaoPan;
+ -->

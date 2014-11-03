@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="business.conut">
+<class name="Sts_UseProp" table="sts_useprop">
+<id name="id" type="java.lang.Integer">
+  <column name="id"></column>  
+<generator class="native" />
+</id>
+<property name="absDay" 	column="absDay"	 	type="java.lang.Integer"/>
+<property name="day" 		column="day"	 	type="java.lang.String"/>
+<property name="time1" 		column="time1"	 	type="java.lang.String"/>
+<property name="time2" 		column="time2"	 	type="java.lang.String"/>
+<property name="uid" 		column="uid"	 	type="java.lang.Integer"/>
+<property name="account" 	column="account" 	type="java.lang.String"/>
+<property name="nick"		column="nick" 		type="java.lang.String"/>
+
+<property name="prop1" 	column="prop1" 	type="java.lang.Integer"/>
+<property name="prop2" 	column="prop2" 	type="java.lang.Integer"/>
+<property name="prop3" 	column="prop3" 	type="java.lang.Integer"/>
+<property name="prop4" 	column="prop4" 	type="java.lang.Integer"/>
+<property name="prop5" 	column="prop5" 	type="java.lang.Integer"/>
+<property name="prop6" 	column="prop6" 	type="java.lang.Integer"/>
+<property name="prop7" 	column="prop7" 	type="java.lang.Integer"/>
+<property name="prop8" 	column="prop8" 	type="java.lang.Integer"/>
+<property name="prop9" 	column="prop9" 	type="java.lang.Integer"/>
+<property name="prop10" 	column="prop10" 	type="java.lang.Integer"/>
+<property name="prop11" 	column="prop11" 	type="java.lang.Integer"/>
+<property name="prop12" 	column="prop12" 	type="java.lang.Integer"/>
+<property name="prop13" 	column="prop13" 	type="java.lang.Integer"/>
+<property name="prop14" 	column="prop14" 	type="java.lang.Integer"/>
+
+<property name="prop15" 	column="prop15" 	type="java.lang.Integer"/>
+<property name="prop16" 	column="prop16" 	type="java.lang.Integer"/>
+<property name="prop17" 	column="prop17" 	type="java.lang.Integer"/>
+<property name="prop18" 	column="prop18" 	type="java.lang.Integer"/>
+<property name="prop19" 	column="prop19" 	type="java.lang.Integer"/>
+<property name="prop20" 	column="prop20" 	type="java.lang.Integer"/>
+
+
+</class>
+<!-- 	
+	private int id;
+	private int absDay;
+	private String day;
+	private int uid;
+	private String account;
+	private String nick;
+	private int propId;
+	private int beforeNum;
+	private int afterNum;-->
+
+</hibernate-mapping>
+
